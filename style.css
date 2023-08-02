@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+.cen{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    height: fit-content;
+    width: 85%;
+    border: 3px solid rgb(251, 185, 196);
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+h2{
+    padding-bottom: 10px;
+    text-align: center;
+    color: #7e7e81;
+}
+.search-box {
+    width: 100%;    
+}
+.search-box input {
+    padding: 0px 5px 2px 0px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 15px;
+}
+.search-box button {
+    padding: 7px 2px;
+    width: 25%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.result {
+    position: relative;
+    padding-left: 20px;
+}
+/* .result.active{
+    height:
+} */
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    margin-top: 10px;
+}
+/* .result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+} */
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+#search-btn{
+    cursor: pointer;
+}
+#search-btn:hover {
+    background-color:  #7863d4;
+    background-position: right center;
+}
+#search-btn:active {
+    background-color: #ae9cff;
+    box-shadow: 0 1px #666;
+    transform: translateY(0.5px);
+}
+.img{
+    height: 200px;
+    width: 110px;
+}
+
+@media only screen and (min-width: 700px){
+    .img{
+        padding: 0 50PX;
+        padding-right: 100px;
+        height: 350px;
+        width: 180px;
+    }
+    .cen{
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 130px;
+    }
+    .container{
+        width: 40%;
+    }
+    .search-box{
+        display: flex;
+        justify-content: space-around;
+    }
+    .search-box input {
+        width: 50%;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
